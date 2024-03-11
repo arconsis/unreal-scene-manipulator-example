@@ -14,7 +14,7 @@ void USceneManipulatorGameInstance::Init()
 		FModuleManager::Get().LoadModule("WebSockets");
 	}
 
-	WebSocket = FWebSocketsModule::Get().CreateWebSocket("ws://192.168.2.249:8080/ws");
+	WebSocket = FWebSocketsModule::Get().CreateWebSocket("ws://YOURLINK");
 
 	WebSocket->OnConnected().AddLambda([]() {
 			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Green, "Successfully connected");
