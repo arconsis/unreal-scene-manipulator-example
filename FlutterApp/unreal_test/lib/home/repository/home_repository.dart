@@ -4,7 +4,7 @@ import 'data/rest_list.dart';
 
 class HomeRepository {
   final _websocketChannel = WebSocketChannel.connect(
-    Uri.parse('wss://a444-109-109-204-74.ngrok-free.app/ws'),
+    Uri.parse('wss://YOURLINK'),
   );
 
 
